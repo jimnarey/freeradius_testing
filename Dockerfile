@@ -25,4 +25,6 @@ RUN groupadd --gid 1000 runuser && \
     mkdir -p /data
 VOLUME /home/runuser
 
+ENV certdir=/etc/freeradius/3.0/certs
+
 CMD ["/usr/local/bin/start.sh"]
